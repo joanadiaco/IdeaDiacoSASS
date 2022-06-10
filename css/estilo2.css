@@ -1,0 +1,124 @@
+.navbar {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 200;
+  text-transform: uppercase; }
+  .navbar li:hover {
+    background-color: #974C9B;
+    border: none; }
+  .navbar li a {
+    text-decoration: none;
+    color: white;
+    display: inline-block; }
+    .navbar li a:hover {
+      color: white;
+      font-weight: 500; }
+
+h1 {
+  font-family: "Poppins", sans-serif;
+  font-weight: 300;
+  font-style: none;
+  letter-spacing: 0.3rem;
+  text-align: center;
+  line-height: 1.6;
+  background-color: #F4D376; }
+
+section {
+  margin: 10px;
+  padding: 10px; }
+  section h2 {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500, bold;
+    line-height: 1.6;
+    text-align: left;
+    color: #974C9B; }
+  section .divIndex {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between; }
+    section .divIndex p {
+      font-family: "Poppins", sans-serif;
+      font-weight: 300;
+      line-height: 1.6;
+      text-align: left; }
+
+footer {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 1, 1fr;
+  gap: 10px;
+  grid-template-areas: "contacto logo redes";
+  justify-items: center;
+  align-items: center;
+  background-color: black; }
+  footer .divContacto {
+    grid-area: contacto;
+    margin: 5px;
+    padding: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; }
+    footer .divContacto h4 {
+      font-family: "Montserrat", sans-serif;
+      font-weight: 500, bold;
+      font-size: 13px;
+      font-style: normal;
+      text-decoration: underline;
+      text-align: center;
+      line-height: 25px;
+      color: white; }
+    footer .divContacto ul {
+      list-style-type: none;
+      font-family: "Montserrat", sans-serif;
+      font-weight: 500;
+      font-size: 12px;
+      text-align: left;
+      color: white; }
+  footer .divlogo {
+    grid-area: logo;
+    margin: 5px;
+    padding: 5px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between; }
+    footer .divlogo img {
+      animation-duration: 4s; }
+  footer .divRedes {
+    grid-area: redes;
+    margin: 5px;
+    padding: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; }
+    footer .divRedes h4 {
+      font-family: "Montserrat", sans-serif;
+      font-weight: 500, bold;
+      font-size: 13px;
+      font-style: normal;
+      text-decoration: underline;
+      text-align: center;
+      line-height: 25px;
+      color: white; }
+    footer .divRedes ul {
+      list-style-type: none;
+      font-family: "Montserrat", sans-serif;
+      font-weight: 500;
+      font-size: 12px;
+      text-align: center; }
+      footer .divRedes ul li a {
+        text-decoration: none;
+        color: white; }
+        footer .divRedes ul li a:hover {
+          color: #974C9B;
+          font-weight: bold; }
+
+* {
+  /* Reseteo margin CSS */
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+/* ---------------------------------------- */
+/* Fondo del Body */
+body {
+  background-color: #b8c6db;
+  background-image: linear-gradient(315deg, #b8c6db 0%, #f5f7fa 74%); }

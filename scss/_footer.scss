@@ -1,0 +1,83 @@
+footer{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 1, 1fr;
+    gap: 10px;
+    grid-template-areas: 
+    "contacto logo redes";
+    justify-items: center;
+    align-items: center;  
+    background-color: black;
+    .divContacto{
+        grid-area: contacto;
+        margin: 5px;
+        padding: 5px;  
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        h4{
+            font-family: $subtitleFont;
+            font-weight: 500, bold;
+            font-size: 13px;
+            font-style: normal;    
+            text-decoration: underline;
+            text-align: center;
+            line-height: 25px;
+            color: white;
+        }
+        ul{
+            list-style-type: none;
+            font-family: $subtitleFont;
+            font-weight: 500;
+            font-size: 12px;
+            text-align: $subtitleAlign;
+            color: white;
+        }
+    }
+    .divlogo{
+        grid-area: logo;
+        margin: 5px;
+        padding: 5px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        img{
+            animation-duration: 4s;
+        }
+    }
+    .divRedes{
+        grid-area: redes;
+        margin: 5px;
+        padding: 5px;   
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        h4{
+            font-family: $subtitleFont;
+            font-weight: 500, bold;
+            font-size: 13px;
+            font-style: normal;    
+            text-decoration: underline;
+            text-align: center;
+            line-height: 25px;
+            color: white;
+        }
+        ul{
+            list-style-type: none;
+            font-family: $subtitleFont;
+            font-weight: 500;
+            font-size: 12px;
+            text-align: center;
+            li{
+                a{
+                    text-decoration: none;
+                    color: white;
+                    &:hover{
+                        color: $subtitleColor;
+                        font-weight: bold;
+                    }
+                }
+            }
+        }
+    }
+}

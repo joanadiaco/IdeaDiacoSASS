@@ -1,0 +1,31 @@
+h1{
+    font-family: $titleFont;
+    font-weight: $titleWeight;
+    font-style: none;
+    letter-spacing: 0.3rem;
+    text-align: $titleAlign;
+    line-height: 1.6;
+    background-color: $titleBackgr;
+}
+section{
+    margin: $sectMargin;
+    padding: $sectPadd;
+    h2{
+        font-family: $subtitleFont;
+        font-weight: $subtitleWeight;
+        line-height: 1.6;
+        text-align: $subtitleAlign;
+        color: $subtitleColor;
+    }
+    .divIndex{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        p{
+            font-family: $titleFont;
+            font-weight: $titleWeight;
+            line-height: 1.6;
+            text-align: $subtitleAlign;
+        }
+    }
+}

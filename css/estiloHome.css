@@ -1,0 +1,457 @@
+*{   /* Reseteo margin CSS */
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* ---------------------------------------- */
+/* HEADER */ 
+/* Menú de navegación */
+.navbar{
+    font-family: 'Montserrat', sans-serif; /*$subtitleFont*/
+    font-weight: 200;
+    text-transform: uppercase;
+}
+.navbar li a{
+    text-decoration: none;
+    color: white;
+    display: inline-block;
+}
+.navbar li:hover{
+    background-color: #974C9B; /*$subtitleColor*/
+    border: none;
+}
+.navbar li a:hover{
+    color:white;
+    font-weight: 500;
+}
+/* ---------------------------------------- */
+/* Fondo del Body */
+body{   /*AGREGAR EN ESTILO2*/
+    background-color: #b8c6db;
+    background-image: linear-gradient(315deg, #b8c6db 0%, #f5f7fa 74%);
+}
+/* ---------------------------------------- */
+/* INICIO Main */
+h1{   /* Títulos de páginas */  
+    font-family: 'Poppins', sans-serif; /*$titleFont*/
+    font-weight: 300; /*$titleWeight*/
+    font-style: none;
+    letter-spacing: 0.3rem;
+    text-align: center; /*$titleAlign*/
+    line-height: 1.6;
+    background-color: #F4D376; /*$titleBackgr*/
+}
+section{  
+    margin: 10px; /*$sectMargin*/
+    padding: 10px; /*$sectPadd*/
+}
+h2{    /* Subtítulos */ 
+    font-family: 'Montserrat', sans-serif; /*subtitleFont*/
+    font-weight: 500, bold; /*$subtitleWeight*/
+    line-height: 1.6;
+    text-align: left; /*$subtitleAlign*/
+    color: #974C9B; /*$subtitleColor*/
+}
+.divIndex{   /* Divs del Index (contenedores flex) */ 
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;    
+}
+p{    /* párrafos */ 
+    font-family: 'Poppins', sans-serif; /*$titleFont*/
+    font-weight: 300; /*$titleWeight*/
+    line-height: 1.6;
+    text-align: left; /*$subtitleAlign*/
+}
+/* ---------------------------------------- */
+/* STAFF */  
+.sectionCards{      /* Contenedor grid padre con divs adentro */
+    margin: 10px auto;
+    width: 95%;
+    height: auto;
+    display: grid; 
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    gap: 15px; 
+    justify-content: space-between; 
+    align-content: space-between;
+}
+.cardProfe{        /* div con presentación de cada profe (img+txt) */
+    display: flex;  
+    flex-direction: column;
+    justify-content: flex-start;
+    border: #b8c6db solid;
+    border-radius: 20px;
+    margin: 0;
+}
+.imgProfe{          /* div con img del profe */
+    padding: 10px;
+    margin: 5px;
+    text-align: center;
+}
+.cardProfe h3{         /* h3 "nombre del profesor/a" */
+    padding: 5px;
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    font-size: 25px;
+    color: #974C9B;
+    text-align: center;
+    text-transform: uppercase;
+}
+.cardProfe p{        /* p con descripción del profe */
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 13px;
+    margin: 0;
+}
+.cardProfe h4{                 /* h4 con especialidad del profe */
+    font-family: 'Montserrat', sans-serif;
+    font-style: italic;
+    font-weight: 500;
+    font-size: x-small;
+    text-align: center;
+    padding: 5px;
+    margin: 0;
+}
+.sectionTestimonios{  /* Contenedor grid con divs adentro */
+    margin: 10px auto;
+    width: 95%;
+    height: auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 1fr;
+    gap: 15px;
+    justify-items: stretch;
+    align-items: stretch;
+    justify-content: stretch;
+    align-content: stretch;
+}
+.divTestimonio{     /* Div con testimonio */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border: #b8c6db solid;
+    border-radius: 20px;
+}
+.divTestimonio p{            /* P con reseña del alumno */
+    font-family: 'Poppins', sans-serif;
+    font-weight: 300;
+    font-size: medium;
+    font-style: italic;
+    line-height: 1.6;
+    text-align: center;
+    margin: 10px;
+    color: #974C9B;
+}
+.divTestimonio h3{         /* h3 "nombre del alumno" */
+    font-family: 'Poppins', sans-serif;
+    font-weight: 300;
+    font-size: medium;
+    font-style: normal;
+    text-transform: uppercase;
+    text-align: center;
+    letter-spacing: 2px;
+    color: black;
+}
+.divTestimonio h4{   /* h4 "alumno de..." */
+    font-family: 'Poppins', sans-serif;
+    font-weight: 300;
+    font-size: x-small;
+    text-align: center;
+}
+/* ---------------------------------------- */
+/* CLASES PARTICULARES */   
+.sectionInstr{          /* Sección con Lista de instrumentos + Imgs */
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-content: space-between;
+    margin: 0;
+    padding: 0;
+}
+.ulInstrumentos{    /* div con lista de instrumentos */
+    margin-left: 40px;
+    margin-right: 10px;
+    margin-top: 0;
+    list-style-type: disc;
+    font-family: 'Poppins', sans-serif;
+    font-style: italic;
+    font-weight: 300;
+    line-height: 1.6;
+    text-align: left;
+}
+.imgInstr{              /* Grilla de imágenes */
+    margin-top: 0;
+    margin-right: 10px;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 10px;
+    justify-items: stretch;
+    align-items: stretch;
+}
+.imgInstr img{   /* Opacidad */
+    opacity: .7;
+}
+.imgInstr img:hover{
+    opacity: 1;
+}
+.ulPagos{               /* Lista de Medios de Pago */
+    margin-top:  10px;
+    margin-left: 20px;
+    list-style-type:disc;
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 1.6;
+    text-align: left;
+}
+/* ---------------------------------------- */
+/* FORMULARIOS DE CONTACTO Y PORTAL */   
+form{           /* Formulario */
+    border: #b8c6db solid;
+    margin: 20px auto;
+    padding: 20px;
+    font-family: 'Montserrat', sans-serif;
+    text-align: left;
+}
+label{              /* Labels */
+    font-style: normal;
+    font-weight: 500;
+    font-size: large;
+}
+input, textarea{            /* Campos para escribir datos */
+    font-family: 'Poppins', sans-serif;
+    font-weight: 300;
+    font-style: normal;
+}
+.form-text{     /* Leyendas "Nunca compartiremos tus datos" y "Acepto términos y condiciones" */
+    font-size: 13px;
+    font-style: italic;
+}
+button{          /* Botones "ingresar", "enviar" y "borrar" */
+    padding: 10px;
+}
+/* ---------------------------------------- */
+/* FOOTER */    
+footer{             /* Contenedor grid padre */
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 1, 1fr;
+    gap: 10px;
+    grid-template-areas: 
+    "contacto logo redes";
+    justify-items: center;
+    align-items: center;  
+    background-color: black;
+}
+.divContacto{       /* Div para elementos Contacto */
+    grid-area: contacto;
+    margin: 5px;
+    padding: 5px;  
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.divContacto h4{          /* h4 "Contacto"*/
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500, bold;
+    font-size: 13px;
+    font-style: normal;    
+    text-decoration: underline;
+    text-align: center;
+    line-height: 25px;
+    color: white;
+}
+.divContacto ul{        /*Lista Contacto*/
+    list-style-type: none;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    font-size: 12px;
+    text-align: left;
+    color: white;  
+}
+.divlogo{           /* Div para img del logo (enlace interno al header) */
+    grid-area: logo;
+    margin: 5px;
+    padding: 5px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.divlogo img{
+    animation-duration: 4s;
+}
+.divRedes{          /* contenedor para elementos Redes */
+    grid-area: redes;
+    margin: 5px;
+    padding: 5px;   
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.divRedes h4{             /* h4 "Redes"*/
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500, bold;
+    font-size: 13px;
+    font-style: normal;
+    text-decoration: underline;
+    text-align: center;
+    line-height: 25px;
+    color: white; 
+}
+.divRedes ul{           /*Lista Redes*/
+    list-style-type: none;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    font-size: 12px;
+    text-align: center;
+}
+.divRedes li a{      /*Características links de Redes sociales*/
+    text-decoration: none;
+    color: white;
+}
+.divRedes li a:hover{   /*Selección de links de Redes sociales*/
+    color: #974C9B;
+    font-weight: bold;   
+}
+/* ---------------------------------------- */
+/* MOBILE FIRST */
+@media only screen and (max-width: 600px){   /*Menor o igual a 600px*/
+    .nav-item{     /* alineación de texto en menú hamburguesa */
+        text-align: center;
+    }
+    .divIndex{     /* sections del Index */
+        flex-direction: column;
+        justify-content: center;
+    }
+    .divIndex p{
+        text-align: center;
+    }
+    .divIndex img{  /* imgs de sections del index.html */
+        width: auto;
+    }
+    .sectionCards{  /* section profesores en staff.html */
+        margin: 5px auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;     
+    }
+    .cardProfe{   /* div de cada profesor */
+        justify-content: stretch;
+    }
+    .sectionTestimonios{    /* contenedor con testimonios en staff.html */
+        margin: 5px auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-content: space-between;
+    }
+    .sectionInstr{   /*  contenedor con divs de lista e imgs en clases.html */
+        flex-direction: column;
+    }
+    .ulInstrumentos{    /* ul con lista de instrumentos en clases.html */
+        text-align: center;
+        text-transform: capitalize;
+        letter-spacing: 2.5px;
+        line-height: 30px;
+        margin: 5px;
+        font-style: normal;
+    }
+    .ulInstrumentos li{
+        list-style-type: none;
+    }
+    .imgInstr{     /* div con imagenes en clases.html */
+        margin: 15px auto;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(5, 1fr);
+    }
+    .imgInstr img{   /* Opacidad */
+        opacity: 1;
+    }
+    footer{
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: 1, 1fr;
+        grid-template-areas: 
+        "logo logo"
+        "contacto redes";
+        gap: 5px;
+    }
+    .divRedes{
+        margin: 0;
+    }
+    .divContacto{
+        margin: 0;
+    }
+}
+@media only screen and (min-width: 601px) and (max-width: 1000px){  /*entre 601px y 1000px*/
+    .nav-item{     /* alineación de texto en menú hamburguesa */
+        text-align: center;
+    }
+    .divIndex{     /* sections del Index */
+        flex-direction: column;
+        justify-content: center;
+    }
+    .divIndex p{
+        text-align: center;
+    }
+    .divIndex img{  /* imgs de sections del index.html */
+        width: auto;
+    }
+    .sectionCards{  /* section profesores en staff.html */
+        margin: 5px auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;     
+    }
+    .cardProfe{   /* div de cada profesor */
+        justify-content: stretch;
+    }
+    .sectionTestimonios{    /* contenedor con testimonios en staff.html */
+        margin: 5px auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-content: space-between;
+    }
+    .sectionInstr{   /*  contenedor con divs de lista e imgs en clases.html */
+        flex-direction: row;
+    }
+    .ulInstrumentos{    /* ul con lista de instrumentos en clases.html */
+        text-align: center;
+        text-transform: uppercase;
+        letter-spacing: 2.5px;
+        line-height: 70px;
+        margin: 5px;
+        font-style: normal;
+    }
+    .ulInstrumentos li{
+        list-style-type: none;
+    }
+    .imgInstr{     /* div con imagenes en clases.html */
+        margin: 15px auto;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(5, 1fr);
+        gap: 15px;
+    }
+    .imgInstr img{   /* Opacidad */
+        opacity: 1;
+    }
+    footer{
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: 1, 1fr;
+        grid-template-areas: 
+        "logo logo"
+        "contacto redes";
+        gap: 15px;
+    }
+    .divRedes{
+        margin: 0;
+    }
+    .divContacto{
+        margin: 0;
+    }
+}

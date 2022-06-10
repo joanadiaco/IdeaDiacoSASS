@@ -1,0 +1,16 @@
+@import "variables";
+@import "header";
+@import "main";
+@import "footer";
+
+*{   /* Reseteo margin CSS */
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* ---------------------------------------- */
+/* Fondo del Body */
+body{   
+    background-color: #b8c6db;
+    background-image: linear-gradient(315deg, #b8c6db 0%, #f5f7fa 74%);
+}
