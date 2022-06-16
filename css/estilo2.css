@@ -176,6 +176,26 @@ section .ulPagos {
   line-height: 1.6;
   text-align: left; }
 
+section form {
+  border: #b8c6db solid;
+  margin: 20px auto;
+  padding: 20px;
+  font-family: "Montserrat", sans-serif;
+  text-align: left; }
+  section form div label {
+    font-style: normal;
+    font-weight: 500;
+    font-size: large; }
+  section form div input, section form div textarea {
+    font-family: "Poppins", sans-serif;
+    font-weight: 300;
+    font-style: normal; }
+  section form div .form-text {
+    font-size: 13px;
+    font-style: italic; }
+  section form div button {
+    padding: 10px; }
+
 footer {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -257,3 +277,111 @@ footer {
 body {
   background-color: #b8c6db;
   background-image: linear-gradient(315deg, #b8c6db 0%, #f5f7fa 74%); }
+
+/* ---------------------------------------- */
+/* MOBILE FIRST */
+@media only screen and (max-width: 600px) {
+  /*Menor o igual a 600px*/
+  .navbar .nav-item {
+    text-align: center; }
+  section .divIndex {
+    flex-direction: column;
+    justify-content: center; }
+    section .divIndex p {
+      text-align: center; }
+    section .divIndex img {
+      width: auto; }
+  .sectionCards {
+    margin: 5px auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; }
+    .sectionCards .cardProfe {
+      justify-content: stretch; }
+  .sectionTestimonios {
+    margin: 5px auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-content: space-between; }
+  .sectionInstr {
+    flex-direction: column; }
+    .sectionInstr .ulInstrumentos {
+      text-align: center;
+      text-transform: capitalize;
+      letter-spacing: 2.5px;
+      line-height: 30px;
+      margin: 5px;
+      font-style: normal; }
+      .sectionInstr .ulInstrumentos li {
+        list-style-type: none; }
+    .sectionInstr .imgInstr {
+      margin: 15px auto;
+      grid-template-columns: repeat(2, 1fr);
+      grid-template-rows: repeat(5, 1fr); }
+      .sectionInstr .imgInstr img {
+        opacity: 1; }
+  footer {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 1, 1fr;
+    grid-template-areas: "logo logo"
+ "contacto redes";
+    gap: 5px; }
+    footer .divRedes {
+      margin: 0; }
+    footer .divContacto {
+      margin: 0; } }
+
+@media only screen and (min-width: 601px) and (max-width: 1000px) {
+  /*entre 601px y 1000px*/
+  .navbar .nav-item {
+    text-align: center; }
+  section .divIndex {
+    flex-direction: column;
+    justify-content: center; }
+    section .divIndex p {
+      text-align: center; }
+    section .divIndex img {
+      width: auto; }
+  .sectionCards {
+    margin: 5px auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; }
+    .sectionCards .cardProfe {
+      justify-content: stretch; }
+  .sectionTestimonios {
+    margin: 5px auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-content: space-between; }
+  .sectionInstr {
+    flex-direction: row; }
+    .sectionInstr .ulInstrumentos {
+      text-align: center;
+      text-transform: uppercase;
+      letter-spacing: 2.5px;
+      line-height: 70px;
+      margin: 5px;
+      font-style: normal; }
+      .sectionInstr .ulInstrumentos li {
+        list-style-type: none; }
+    .sectionInstr .imgInstr {
+      margin: 15px auto;
+      grid-template-columns: repeat(2, 1fr);
+      grid-template-rows: repeat(5, 1fr);
+      gap: 15px; }
+      .sectionInstr .imgInstr img {
+        opacity: 1; }
+  footer {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 1, 1fr;
+    grid-template-areas: 
+    "logo logo"
+    "contacto redes";
+    gap: 15px; }
+    footer .divRedes {
+      margin: 0; }
+    footer .divContacto {
+      margin: 0; } }

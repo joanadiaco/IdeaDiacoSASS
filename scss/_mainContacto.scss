@@ -1,0 +1,28 @@
+section{
+    form{
+        border: #b8c6db solid;
+        margin: 20px auto;
+        padding: 20px;
+        font-family: $subtitleFont;
+        text-align: $subtitleAlign;
+        div{
+            label{
+                font-style: normal;
+                font-weight: 500;
+                font-size: large;
+            }
+            input, textarea{
+                font-family: $titleFont;
+                font-weight: $titleWeight;
+                font-style: normal;
+            }
+            .form-text{
+                font-size: 13px;
+                font-style: italic;
+            }
+            button{
+                padding: 10px;
+            }
+        }
+    }
+}
