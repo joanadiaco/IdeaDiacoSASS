@@ -1,0 +1,47 @@
+.sectionInstr{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-content: space-between;
+    margin: 0;
+    padding: 0;
+    .ulInstrumentos{
+        margin-left: 40px;
+        margin-right: 10px;
+        margin-top: 0;
+        list-style-type: disc;
+        font-family: $titleFont;
+        font-style: italic;
+        font-weight: $titleWeight;
+        line-height: 1.6;
+        text-align: $subtitleAlign;
+    }
+    .imgInstr{
+        margin-top: 0;
+        margin-right: 10px;
+        display: grid;
+        grid-template-columns: repeat(5, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        gap: 10px;
+        justify-items: stretch;
+        align-items: stretch;
+        img{
+            opacity: .7;
+            &:hover{
+                opacity: 1;
+            }
+        }   
+    }
+}
+section{
+    .ulPagos{
+        margin-top:  10px;
+        margin-left: 20px;
+        list-style-type: disc;
+        font-family: $titleFont;
+        font-style: normal;
+        font-weight: $titleWeight;
+        line-height: 1.6;
+        text-align: $subtitleAlign;
+    }
+}

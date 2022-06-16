@@ -17,15 +17,10 @@ section{
         text-align: $subtitleAlign;
         color: $subtitleColor;
     }
-    .divIndex{
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        p{
-            font-family: $titleFont;
-            font-weight: $titleWeight;
-            line-height: 1.6;
-            text-align: $subtitleAlign;
-        }
-    }
+    p{
+        font-family: $titleFont;
+        font-weight: $titleWeight;
+        line-height: 1.6;
+        text-align: $subtitleAlign;
+    }   
 }
