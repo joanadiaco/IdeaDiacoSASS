@@ -1,3 +1,22 @@
+@mixin cajas {
+    margin: 5px;
+    padding: 5px;  
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: white;
+}
+
+@mixin textoCajas {
+    font-family: $subtitleFont;
+    font-weight: 500, bold;
+    font-size: 13px;
+    font-style: normal;    
+    text-decoration: underline;
+    text-align: center;
+    line-height: 25px;
+}
+
 footer{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -10,20 +29,9 @@ footer{
     background-color: black;
     .divContacto{
         grid-area: contacto;
-        margin: 5px;
-        padding: 5px;  
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
+        @include cajas;
         h4{
-            font-family: $subtitleFont;
-            font-weight: 500, bold;
-            font-size: 13px;
-            font-style: normal;    
-            text-decoration: underline;
-            text-align: center;
-            line-height: 25px;
-            color: white;
+            @include textoCajas;
         }
         ul{
             list-style-type: none;
@@ -47,20 +55,9 @@ footer{
     }
     .divRedes{
         grid-area: redes;
-        margin: 5px;
-        padding: 5px;   
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
+        @include cajas;
         h4{
-            font-family: $subtitleFont;
-            font-weight: 500, bold;
-            font-size: 13px;
-            font-style: normal;    
-            text-decoration: underline;
-            text-align: center;
-            line-height: 25px;
-            color: white;
+            @include textoCajas;
         }
         ul{
             list-style-type: none;
