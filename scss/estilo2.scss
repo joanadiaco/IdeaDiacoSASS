@@ -4,6 +4,7 @@
 @import "mainHome";
 @import "mainStaff";
 @import "mainClases";
+@import "mainMuestras";
 @import "mainContacto";
 @import "footer";
 
@@ -27,6 +28,9 @@ body{
         }
     }
     section{
+        p{
+            text-align: $titleAlign;
+        }
         .divIndex{
             flex-direction: column;
             justify-content: center;
@@ -38,8 +42,19 @@ body{
             }
         }
     }
+    .profes{
+        p{
+            text-align: $titleAlign;
+        }
+    }
+    .profes2{
+        p{
+            text-align: $titleAlign;
+        }
+    }
     .sectionCards{ 
         margin: 5px auto;
+        margin-bottom: 20px;
         display: flex;
         flex-direction: column;
         justify-content: space-between;
@@ -49,6 +64,7 @@ body{
     }
     .sectionTestimonios{
         margin: 5px auto;
+        margin-bottom: 20px;
         display: flex;
         flex-direction: column;
         justify-content: space-between;
@@ -76,6 +92,16 @@ body{
             }
         }
     }
+    .iframes{
+        iframe{
+            width: 350px;
+            height: 200px;
+            margin: 10px;
+            align-self: center;
+        }
+        flex-direction: column;
+        justify-content: space-between;
+    }
     footer{
         grid-template-columns: repeat(2, 1fr);
         grid-template-rows: 1, 1fr;
@@ -99,6 +125,9 @@ body{
         }
     }
     section{
+        p{
+            text-align: $titleAlign;
+        }
         .divIndex{
             flex-direction: column;
             justify-content: center;
@@ -110,8 +139,19 @@ body{
             }
         }
     }
+    .profes{
+        p{
+            text-align: $titleAlign;
+        }
+    }
+    .profes2{
+        p{
+            text-align: $titleAlign;
+        }
+    }
     .sectionCards{ 
         margin: 5px auto;
+        margin-bottom: 20px;
         display: flex;
         flex-direction: column;
         justify-content: space-between;
@@ -121,6 +161,7 @@ body{
     }
     .sectionTestimonios{
         margin: 5px auto;
+        margin-bottom: 20px;
         display: flex;
         flex-direction: column;
         justify-content: space-between;
@@ -148,6 +189,16 @@ body{
                 opacity: 1;
             }
         }
+    }
+    .iframes{
+        iframe{
+            width: 450px;
+            height: 300px;
+            margin: 10px;
+            align-self: center;
+        }
+        flex-direction: column;
+        justify-content: space-between;
     }
     footer{
         grid-template-columns: repeat(2, 1fr);

@@ -1,9 +1,15 @@
+section{
+    .exceptionP{
+        text-align: left;
+    }
+}
 .sectionInstr{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-content: space-between;
     margin: 0;
+    margin-bottom: 50px;
     padding: 0;
     .ulInstrumentos{
         margin-left: 40px;
@@ -33,7 +39,11 @@
         }   
     }
 }
-section{
+.pagos{
+    margin-bottom: 20px;
+    p{
+        text-align: $subtitleAlign;
+    }
     .ulPagos{
         margin-top:  10px;
         margin-left: 20px;

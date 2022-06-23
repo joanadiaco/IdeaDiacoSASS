@@ -20,7 +20,9 @@ h1 {
   letter-spacing: 0.3rem;
   text-align: center;
   line-height: 1.6;
-  background-color: #F4D376; }
+  background-color: #F4D376;
+  margin-top: 20px;
+  margin-bottom: 20px; }
 
 section {
   margin: 10px;
@@ -40,15 +42,51 @@ section {
 section .divIndex {
   display: flex;
   flex-direction: row;
-  justify-content: space-between; }
+  justify-content: space-between;
+  margin-bottom: 20px; }
   section .divIndex p {
     font-family: "Poppins", sans-serif;
     font-weight: 300;
     line-height: 1.6;
     text-align: left; }
 
+.profes {
+  margin: 10px;
+  padding: 10px;
+  margin-bottom: 20px; }
+  .profes h2 {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500, bold;
+    line-height: 1.6;
+    text-align: left;
+    color: #974C9B; }
+  .profes p {
+    font-family: "Poppins", sans-serif;
+    font-weight: 300;
+    line-height: 1.6;
+    text-align: left; }
+
+.profes2 {
+  margin: 10px;
+  padding: 10px;
+  margin-bottom: none; }
+  .profes2 h2 {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500, bold;
+    line-height: 1.6;
+    text-align: left;
+    color: #974C9B; }
+  .profes2 p {
+    font-family: "Poppins", sans-serif;
+    font-weight: 300;
+    line-height: 1.6;
+    text-align: left; }
+
 .sectionCards {
-  margin: 10px auto;
+  margin-top: 10px;
+  margin-right: 10px auto;
+  margin-left: 10px auto;
+  margin-bottom: 50px;
   width: 95%;
   height: auto;
   display: grid;
@@ -96,7 +134,10 @@ section .divIndex {
       padding: 5px; }
 
 .sectionTestimonios {
-  margin: 10px auto;
+  margin-top: 10px;
+  margin-right: 10px auto;
+  margin-left: 10px auto;
+  margin-bottom: 50px;
   width: 95%;
   height: auto;
   display: grid;
@@ -137,12 +178,16 @@ section .divIndex {
       text-align: center;
       font-size: x-small; }
 
+section .exceptionP {
+  text-align: left; }
+
 .sectionInstr {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-content: space-between;
   margin: 0;
+  margin-bottom: 50px;
   padding: 0; }
   .sectionInstr .ulInstrumentos {
     margin-left: 40px;
@@ -168,15 +213,29 @@ section .divIndex {
       .sectionInstr .imgInstr img:hover {
         opacity: 1; }
 
-section .ulPagos {
-  margin-top: 10px;
-  margin-left: 20px;
-  list-style-type: disc;
-  font-family: "Poppins", sans-serif;
-  font-style: normal;
-  font-weight: 300;
-  line-height: 1.6;
-  text-align: left; }
+.pagos {
+  margin-bottom: 20px; }
+  .pagos p {
+    text-align: left; }
+  .pagos .ulPagos {
+    margin-top: 10px;
+    margin-left: 20px;
+    list-style-type: disc;
+    font-family: "Poppins", sans-serif;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 1.6;
+    text-align: left; }
+
+.carousel {
+  margin-bottom: 40px; }
+
+.iframes {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around; }
+  .iframes iframe {
+    margin: 10px; }
 
 section form {
   border: #b8c6db solid;
@@ -291,6 +350,8 @@ body {
   /*Menor o igual a 600px*/
   .navbar .nav-item {
     text-align: center; }
+  section p {
+    text-align: center; }
   section .divIndex {
     flex-direction: column;
     justify-content: center; }
@@ -298,8 +359,13 @@ body {
       text-align: center; }
     section .divIndex img {
       width: auto; }
+  .profes p {
+    text-align: center; }
+  .profes2 p {
+    text-align: center; }
   .sectionCards {
     margin: 5px auto;
+    margin-bottom: 20px;
     display: flex;
     flex-direction: column;
     justify-content: space-between; }
@@ -307,6 +373,7 @@ body {
       justify-content: stretch; }
   .sectionTestimonios {
     margin: 5px auto;
+    margin-bottom: 20px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -328,6 +395,14 @@ body {
       grid-template-rows: repeat(5, 1fr); }
       .sectionInstr .imgInstr img {
         opacity: 1; }
+  .iframes {
+    flex-direction: column;
+    justify-content: space-between; }
+    .iframes iframe {
+      width: 350px;
+      height: 200px;
+      margin: 10px;
+      align-self: center; }
   footer {
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: 1, 1fr;
@@ -342,6 +417,8 @@ body {
   /*entre 601px y 1000px*/
   .navbar .nav-item {
     text-align: center; }
+  section p {
+    text-align: center; }
   section .divIndex {
     flex-direction: column;
     justify-content: center; }
@@ -349,8 +426,13 @@ body {
       text-align: center; }
     section .divIndex img {
       width: auto; }
+  .profes p {
+    text-align: center; }
+  .profes2 p {
+    text-align: center; }
   .sectionCards {
     margin: 5px auto;
+    margin-bottom: 20px;
     display: flex;
     flex-direction: column;
     justify-content: space-between; }
@@ -358,6 +440,7 @@ body {
       justify-content: stretch; }
   .sectionTestimonios {
     margin: 5px auto;
+    margin-bottom: 20px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -380,6 +463,14 @@ body {
       gap: 15px; }
       .sectionInstr .imgInstr img {
         opacity: 1; }
+  .iframes {
+    flex-direction: column;
+    justify-content: space-between; }
+    .iframes iframe {
+      width: 450px;
+      height: 300px;
+      margin: 10px;
+      align-self: center; }
   footer {
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: 1, 1fr;

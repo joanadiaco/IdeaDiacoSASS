@@ -1,5 +1,26 @@
+@mixin staffSections{
+    margin: $sectMargin;
+    padding: $sectPadd;
+    h2{
+        font-family: $subtitleFont;
+        font-weight: $subtitleWeight;
+        line-height: 1.6;
+        text-align: $subtitleAlign;
+        color: $subtitleColor;
+    }
+    p{
+        font-family: $titleFont;
+        font-weight: $titleWeight;
+        line-height: 1.6;
+        text-align: $subtitleAlign;
+    }
+}
+
 @mixin cards {
-    margin: 10px auto;
+    margin-top: 10px;
+    margin-right: 10px auto;
+    margin-left: 10px auto;
+    margin-bottom: 50px;
     width: 95%;
     height: auto;
     display: grid;
@@ -19,7 +40,14 @@
     font-weight: $titleWeight;
     text-align: $titleAlign;
 }
-
+.profes{
+    @include staffSections;
+    margin-bottom: 20px;
+}
+.profes2{
+    @include staffSections;
+    margin-bottom: none; 
+}
 .sectionCards{
     @include cards;
     grid-template-columns: repeat(3, 1fr);
@@ -57,6 +85,7 @@
         }
     }
 }
+
 .sectionTestimonios{
     @include cards;
     grid-template-columns: repeat(3, 1fr);

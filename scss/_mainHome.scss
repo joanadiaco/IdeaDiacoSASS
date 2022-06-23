@@ -3,6 +3,7 @@ section{
         display: flex;
         flex-direction: row;
         justify-content: space-between;
+        margin-bottom: 20px;
         p{
             font-family: $titleFont;
             font-weight: $titleWeight;
